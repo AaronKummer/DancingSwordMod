@@ -1,0 +1,24 @@
+BACKUP ~DancingSword/Backup~
+AUTHOR ~Aaron Kummer~
+
+VERSION ~v1.0~
+
+LANGUAGE
+	~English~
+	~English~
+
+~DancingSword/English/DancingSwordSetup.tra~
+~DancingSword/English/DancingSwordItems.tra~
+
+BEGIN @1
+
+COPY ~DancingSword/Items/dncswrd.ITM~ ~override/dncswrd.ITM~
+SAY NAME1 @20
+
+COMPILE ~DancingSword/Dialog/DancingSword.d~
+COMPILE ~DancingSword/Scripts/DancingSwordSpawn.baf~
+
+COPY ~DancingSword/CRE/danceswd.CRE~ ~override/danceswd.CRE~
+
+WRITE_ASCII DIALOG ~DancingSword~
+EXTEND_TOP ~BG2300.bcs~ ~DancingSword/Scripts/DancingSwordSpawn.baf~

@@ -1,0 +1,9 @@
+IF
+GLOBAL("DancingSwordSpawn", "GLOBAL", 0)
+
+THEN RESPONSE #100
+
+CreateCreature("danceswd", [2481.3777],E)
+    
+SetGlobal("DancingSwordSpawn", "GLOBAL", 0)
+END
