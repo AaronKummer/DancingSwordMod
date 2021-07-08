@@ -19,6 +19,9 @@ COMPILE ~DancingSword/Dialog/DancingSword.d~
 COMPILE ~DancingSword/Scripts/DancingSwordSpawn.baf~
 
 COPY ~DancingSword/CRE/danceswd.CRE~ ~override/danceswd.CRE~
+	SAY NAME1 @20
+	SAY NAME2 @20
+WRITE_ASCII DIALOG ~DancingSword.d~
+WRITE_ASCII SCRIPT_DEFAULT ~DancingSword~
 
-WRITE_ASCII DIALOG ~DancingSword~
-EXTEND_TOP ~BG2300.bcs~ ~DancingSword/Scripts/DancingSwordSpawn.baf~
+EXTEND_TOP ~BG2616.bcs~ ~DancingSword/Scripts/DancingSwordSpawn.baf~

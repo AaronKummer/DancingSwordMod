@@ -3,7 +3,7 @@ GLOBAL("DancingSwordSpawn", "GLOBAL", 0)
 
 THEN RESPONSE #100
 
-CreateCreature("danceswd", [2481.3777],E)
+CreateCreature("danceswd", [262.491],E)
     
-SetGlobal("DancingSwordSpawn", "GLOBAL", 0)
+SetGlobal("DancingSwordSpawn", "GLOBAL", 1)
 END
