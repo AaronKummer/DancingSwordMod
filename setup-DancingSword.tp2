@@ -7,21 +7,17 @@ LANGUAGE
 	~English~
 	~English~
 
-~DancingSword/English/DancingSwordSetup.tra~
-~DancingSword/English/DancingSwordItems.tra~
+BEGIN ~Dancing Sword mod~
 
-BEGIN @1
+COPY ~DancingSword/Items/dncswrd.ITM~ ~override~
+SAY NAME1 ~Dancing Sword~
 
-COPY ~DancingSword/Items/dncswrd.ITM~ ~override/dncswrd.ITM~
-SAY NAME1 @20
+COMPILE ~DancingSword/Dialog/Dncswrd.d~
 
-COMPILE ~DancingSword/Dialog/DancingSword.d~
-COMPILE ~DancingSword/Scripts/DancingSwordSpawn.baf~
+COPY ~DancingSword/CRE/danceswd.CRE~ ~override~
+	SAY NAME1 ~Dancing Sword~
+	SAY NAME2 ~Dancing Sword~
+	
+WRITE_ASCII DIALOG ~Dncswrd~ #8
 
-COPY ~DancingSword/CRE/danceswd.CRE~ ~override/danceswd.CRE~
-	SAY NAME1 @20
-	SAY NAME2 @20
-WRITE_ASCII DIALOG ~DancingSword.d~
-WRITE_ASCII SCRIPT_DEFAULT ~DancingSword~
-
-EXTEND_TOP ~BG2616.bcs~ ~DancingSword/Scripts/DancingSwordSpawn.baf~
+EXTEND_TOP ~BG2300.bcs~ ~DancingSword/Scripts/DancingSwordSpawn.baf~
